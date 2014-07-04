@@ -5,4 +5,7 @@
 *.o
 *.so
 *.pyc
+*.img
+*.list
+*.map
 
