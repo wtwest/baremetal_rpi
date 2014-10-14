@@ -73,7 +73,7 @@ static void init_bss(void)
 }
 
 /* entry point for the application */
-void _cstart(void)
+void _c_reset(void)
 {
     init_bss();
 

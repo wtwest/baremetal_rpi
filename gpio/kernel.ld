@@ -1,25 +1,12 @@
 
-/* 512MB RAM on my Raspberry Pi */
+/* 512MB RAM on my Raspberry Pi, with 64MB allocated to the GPU */
 MEMORY
 {
-	RAM : ORIGIN = 0X00000000, LENGTH = 0x1fffffff
+	RAM : ORIGIN = 0X00000000, LENGTH = 0x1bffffff
 }
 
 SECTIONS 
 {
-
-/*
-	.init 0x0000 : 
-	{
-		*(.init)
-	} > RAM
-	
-	.text : 
-	{
-		*(.text)
-	} > RAM
-*/
-
 	.text :
 	{
 		KEEP(*(.evt))
